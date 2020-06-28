@@ -1,0 +1,43 @@
+@keyframes loading {
+  0%   {left:-500px;transform: scaleX(1);}
+  5%  { transform: scaleX(1);}
+  10%   { left:-300px;}
+  15%   {transform: scaleX(1);}
+  20%   { left:-100px;}
+  25%   {transform: scaleX(1);}
+  30%   { left:100px;}
+  35%   { transform: scaleX(1);}
+  40%   { left:300px;}
+  45%  {transform: scaleX(1);}
+  50%   {left:500px;}
+  55%  { transform: scaleX(-1);}
+  60%  {left:300px;transform: scaleX(-1);}
+  65%   { transform: scaleX(-1);}
+  70%   {left:100px; transform: scaleX(-1);}
+  75%   { transform: scaleX(-1);}
+  80%   {left:-100px;transform: scaleX(-1);}
+  85%   { transform: scaleX(-1);}
+  90%   {left:-300px;transform: scaleX(-1);}
+  95%   { transform: scaleX(-1);}
+  100%   {left:-500px;transform: scaleX(1);}}
+
+
+.cub{
+  width: 80px;
+  height: 140px;
+  animation-name: loading;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+
+
+#social:hover {transform: rotate(360deg);}
+
+#social{
+	transition:transform 0.5s;
+    width:120px;
+}
+
+

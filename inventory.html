@@ -1,0 +1,53 @@
+
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/animatii.css">
+       <link rel="icon" href="images/favi.gif" type="image/gif" sizes="16x16">
+       <title id="tindex">Log In</title>
+    </head>
+    
+    
+    <body>
+      <header class="header">
+        <h1 class="title">&#8594BOARD GAME STORE&#8592</h1>
+        <h2 class="slogan">Avem tot felul de jocuri</h2>
+      </header>
+      
+    
+      <nav class="menu menu">
+        <a class="menu-item menu-item-active" href="home.html"> Back Home</a>
+      </nav>
+      
+      
+      
+      <div class="page-grid">
+            <main class="container list-container">
+            <div class = "icon">
+                <input type="text" placeholder="nume joc:" name="title" id="titlejoc" >
+
+                <input type="text" placeholder="pret:" name="prc" id="prcjoc">
+
+                <input type="text" placeholder="url imagine:" name="urljoc" id="urljoc" >
+                
+        <div class="log" id="addjoc">ADAUGA</div>
+
+        <br>
+       <div class="container list-container" style="background-color: rgb(255, 255, 255);">
+        <div class ="store-item2" id="listjoc">lista jocuri</p></div>
+        </div>
+        <br>
+        <input type="text" placeholder="id=" name="idj" id="idjoc">
+        <div class="log" id="deljoc">DELETE</div>
+            </main>
+
+            <footer class="footer">
+              <p class="footer-text">Lista cumparaturi:</p>
+              <div class="log" onclick="buttonpress()"></p>
+            </footer>
+      
+    <script src="serverjs.js"></script>
+    <script src="inventory.js"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,68 @@
+
+    
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/animatii.css">
+       <link rel="icon" href="images/favi.gif" type="image/gif" sizes="16x16">
+       <title name="titlu">Register</title>
+    </head>
+    
+    
+    <body>
+      <header class="header">
+        <h1 class="title">&#8594BOARD GAME STORE&#8592</h1>
+        <h2 class="slogan">Avem tot felul de jocuri</h2>
+      </header>
+      
+    
+      <nav class="menu menu">
+        <a class="menu-item menu-item-active" href="index.html"> Check-out</a>
+      </nav>
+      
+      
+      
+        <div class="page-grid">
+            <main class="container list-container">
+            <div class = "icon">
+                <label for="email"><span style="font-size:20px" id='sex'>Va numiti:</span></label>
+                <input type="email" id="email" placeholder="Enter name" name="email">
+
+
+                <label for="color"><span style="font-size:20px">Livrare</span></label>
+
+                <select name="livrare" id="livrare" onclick=showadress()>
+                    <option value="sediu">Ridicare personala</option>
+                    <option value="acasa" id="acasa">Livrare la domiciliu</option>
+                </select>
+                <input type="adresa" id="adresa" placeholder="Adresa=" name="adress" style="display:none;">
+
+
+                <label for="age"><span style="font-size:20px">Are you over 18 years?</span></label>
+                <input type="checkbox" id="age" name="age" value="over" onclick=showb()>
+
+
+                <label for="male"><span style="font-size:20px">Male</span></label>
+                <input type="radio" id="male" name="gender" value="male" onclick=domn()>
+                <label for="female"><span style="font-size:20px">Female</span></label>
+                <input type="radio" id="female" name="gender" value="female" onclick=doamna()>
+
+                <label for="cantitate"><span style="font-size:20px">Cantitate:</span></label>
+                <input type="text" placeholder="Cate produse doriti?" name="cantitate">
+
+<br>
+                <div class="rectangle2" style="display: none;" id="buybtn" onclick=home()><p>BUY</p></div>
+    
+            </div>
+        </main>
+        </div>
+           
+        <script src="background.js"></script>
+        <script src="formular.js"></script>
+      
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="register.js"></script>
+    </body>
+    
+    </html>

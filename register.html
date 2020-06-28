@@ -1,0 +1,76 @@
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/animatii.css">
+     <link rel="icon" href="images/favi.gif" type="image/gif" sizes="16x16">
+     <title name="titlu">Register</title>
+  </head>
+  
+  
+  <body>
+    <header class="header">
+      <h1 class="title">&#8594BOARD GAME STORE&#8592</h1>
+      <h2 class="slogan">Avem tot felul de jocuri</h2>
+    </header>
+    
+  
+    <nav class="menu menu">
+      <a class="menu-item menu-item-active" href="index.html"> Register</a>
+    </nav>
+    
+    
+    
+      <div class="page-grid">
+          <main class="container list-container">
+          <div class = "icon">
+            <label for="uname"><span style="font-size:20px">Username</span></label>
+              <input type="text" id="user" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><span style="font-size:20px">Password</span></label>
+              <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+          
+              <label for="email"><span style="font-size:20px">Email</span></label>
+              <input type="email" id="email" placeholder="Enter Email" name="email">
+              <label for="region"><span style="font-size:20px">Language</span></label>
+              <select name="region" id="region">
+                  <option value="English">English</option>
+                  <option value="Romanian">Romanian</option>
+                  <option value="Italian">Italian</option>
+                  <option value="German">German</option>
+              </select>
+              <label for="age"><span style="font-size:20px">Are you over 18 years?</span></label>
+              <input type="checkbox" id="age" name="age" value="over">
+              <label for="male"><span style="font-size:20px">Male</span></label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="female"><span style="font-size:20px">Female</span></label>
+              <input type="radio" id="female" name="gender" value="female">
+              <div class="rectangle2" onclick="reg()"><p>Register</p></div>
+  
+          </div>
+      </main>
+      <footer class="footer">
+
+
+            <p class="footer-text">Buzamat Ionut-Alexandru, Proiect 2020 Tehnici Web</p>
+        <p class="footer-text">Grupa 133, Anul 1</p>
+        <label for="volum"><span style="font-size:20px">Background music:</span></label>
+<input type="range" id="volum" name="volum" min="0" max="1" step="0.05" oninput="changevolume()">
+
+<div class = "icon2">
+        <div class="rectangle" id="trailerplay" onclick="trailer(this)"><p>Trailer</p></div>
+</div>
+
+      </footer>
+      </div>
+         
+      <script src="background.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="register.js"></script>
+  </body>
+  
+  </html>
+
+
